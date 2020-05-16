@@ -17,7 +17,7 @@ But you can also download the AnyBar binary directly from the [Releases](https:/
 
 1. Download latest Netstatus binary from the [Releases](https://github.com/andrewkharook/netstatus/releases) page and put it in your PATH, e.g. `/usr/local/bin/`
 
-2. Add either a cron job to run the netstatus repeatedly, or a [launchd](https://www.launchd.info) config, e.g.:
+2. Add either a cron job to run the Netstatus repeatedly, or a [launchd](https://www.launchd.info) config, e.g.:
 
 ```xml
 <!-- ~/Library/LaunchAgents/com.github.andrewkharook.netstatus.plist -->
@@ -39,3 +39,10 @@ But you can also download the AnyBar binary directly from the [Releases](https:/
 ```
 
 3. Start Anybar and enjoy.
+
+## Parameters
+
+You can use the following command line parameters to tune Netstatus to your needs:
+
+- `-host <string>` - A host to ping (default is 1.1.1.1)
+- `-port <int>` - The port of your AnyBar instance (default is 1738)
